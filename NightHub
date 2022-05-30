@@ -267,6 +267,29 @@ end
 coroutine.wrap(VEKXZXS_fake_script)()
 
 
+---DISCORD INVITE
+
+local bindable = Instance.new("BindableFunction")
+
+local function DiscordInvite(response)
+	if response == "Yes" then
+		setclipboard(tostring("https://discord.gg/kau6Xtrk"))
+	end
+end
+
+bindable.OnInvoke = DiscordInvite
+
+game.StarterGui:SetCore("SendNotification", {
+	Title = "Discord Invite",
+	Text = "Copy Discord to Clipboard",
+	Icon = "",
+	Duration = 7,
+	Callback = bindable,
+	Button1 = "Yes",
+	Button2 = "No"
+})
+
+---DISCORD INVITE
 
 local currentpage = 1
 local maxpage = 1
