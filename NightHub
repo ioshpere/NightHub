@@ -1,0 +1,419 @@
+local NightHub = Instance.new("ScreenGui")
+local TopFrame = Instance.new("Frame")
+local Background = Instance.new("Frame")
+local ScriptFrame = Instance.new("Frame")
+local UIListLayout = Instance.new("UIListLayout")
+local UICorner = Instance.new("UICorner")
+local BloxFruits = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local DaHood = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local TowerofHell = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local PrisionLife = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local Arsenal = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local KAT = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local AdoptMe = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local PrevPage = Instance.new("TextButton")
+local NextPage = Instance.new("TextButton")
+local SearchBar = Instance.new("TextBox")
+local TopBarUI = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local Toggle = Instance.new("TextButton")
+
+--Properties:
+
+NightHub.Name = "NightHub"
+NightHub.Parent = game.CoreGui
+NightHub.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+TopFrame.Name = "TopFrame"
+TopFrame.Parent = NightHub
+TopFrame.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+TopFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TopFrame.BorderSizePixel = 0
+TopFrame.Position = UDim2.new(0.312280655, 0, 0.307189494, 0)
+TopFrame.Size = UDim2.new(0.190632358, 0, 0.0599999987, 0)
+
+Background.Name = "Background"
+Background.Parent = TopFrame
+Background.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Background.BorderSizePixel = 0
+Background.Position = UDim2.new(0, 0, 0.980392218, 0)
+Background.Size = UDim2.new(1.00000012, 0, 7.97575331, 0)
+
+ScriptFrame.Name = "ScriptFrame"
+ScriptFrame.Parent = Background
+ScriptFrame.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+ScriptFrame.BorderSizePixel = 0
+ScriptFrame.Position = UDim2.new(0.0526317395, 0, 0.0348379649, 0)
+ScriptFrame.Size = UDim2.new(0.890081406, 0, 0.867667794, 0)
+
+UIListLayout.Parent = ScriptFrame
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.Padding = UDim.new(0, 7)
+
+UICorner.Parent = ScriptFrame
+
+BloxFruits.Name = "BloxFruits"
+BloxFruits.Parent = ScriptFrame
+BloxFruits.BackgroundColor3 = Color3.fromRGB(94, 94, 94)
+BloxFruits.Size = UDim2.new(0.993429661, 0, 0.104425773, 0)
+BloxFruits.Font = Enum.Font.Gotham
+BloxFruits.Text = "Blox Fruits"
+BloxFruits.TextColor3 = Color3.fromRGB(255, 255, 255)
+BloxFruits.TextScaled = true
+BloxFruits.TextSize = 14.000
+BloxFruits.TextWrapped = true
+
+UICorner_2.Parent = BloxFruits
+
+DaHood.Name = "DaHood"
+DaHood.Parent = ScriptFrame
+DaHood.BackgroundColor3 = Color3.fromRGB(94, 94, 94)
+DaHood.Size = UDim2.new(0.993429661, 0, 0.104425773, 0)
+DaHood.Font = Enum.Font.Gotham
+DaHood.Text = "Da Hood"
+DaHood.TextColor3 = Color3.fromRGB(255, 255, 255)
+DaHood.TextScaled = true
+DaHood.TextSize = 14.000
+DaHood.TextWrapped = true
+
+UICorner_3.Parent = DaHood
+
+TowerofHell.Name = "TowerofHell"
+TowerofHell.Parent = ScriptFrame
+TowerofHell.BackgroundColor3 = Color3.fromRGB(94, 94, 94)
+TowerofHell.Size = UDim2.new(0.993429661, 0, 0.104425773, 0)
+TowerofHell.Font = Enum.Font.Gotham
+TowerofHell.Text = "Tower Of Hell"
+TowerofHell.TextColor3 = Color3.fromRGB(255, 255, 255)
+TowerofHell.TextScaled = true
+TowerofHell.TextSize = 14.000
+TowerofHell.TextWrapped = true
+
+UICorner_4.Parent = TowerofHell
+
+PrisionLife.Name = "PrisionLife"
+PrisionLife.Parent = ScriptFrame
+PrisionLife.BackgroundColor3 = Color3.fromRGB(94, 94, 94)
+PrisionLife.Size = UDim2.new(0.993429661, 0, 0.104425773, 0)
+PrisionLife.Font = Enum.Font.Gotham
+PrisionLife.Text = "Prision Life"
+PrisionLife.TextColor3 = Color3.fromRGB(255, 255, 255)
+PrisionLife.TextScaled = true
+PrisionLife.TextSize = 14.000
+PrisionLife.TextWrapped = true
+
+UICorner_5.Parent = PrisionLife
+
+Arsenal.Name = "Arsenal"
+Arsenal.Parent = ScriptFrame
+Arsenal.BackgroundColor3 = Color3.fromRGB(94, 94, 94)
+Arsenal.Size = UDim2.new(0.993429661, 0, 0.104425773, 0)
+Arsenal.Font = Enum.Font.Gotham
+Arsenal.Text = "Arsenal"
+Arsenal.TextColor3 = Color3.fromRGB(255, 255, 255)
+Arsenal.TextScaled = true
+Arsenal.TextSize = 14.000
+Arsenal.TextWrapped = true
+
+UICorner_6.Parent = Arsenal
+
+KAT.Name = "KAT"
+KAT.Parent = ScriptFrame
+KAT.BackgroundColor3 = Color3.fromRGB(94, 94, 94)
+KAT.Size = UDim2.new(0.993429661, 0, 0.104425773, 0)
+KAT.Font = Enum.Font.Gotham
+KAT.Text = "KAT"
+KAT.TextColor3 = Color3.fromRGB(255, 255, 255)
+KAT.TextScaled = true
+KAT.TextSize = 14.000
+KAT.TextWrapped = true
+
+UICorner_7.Parent = KAT
+
+AdoptMe.Name = "AdoptMe"
+AdoptMe.Parent = ScriptFrame
+AdoptMe.BackgroundColor3 = Color3.fromRGB(94, 94, 94)
+AdoptMe.Size = UDim2.new(0.993429661, 0, 0.104425773, 0)
+AdoptMe.Font = Enum.Font.Gotham
+AdoptMe.Text = "Adopt Me"
+AdoptMe.TextColor3 = Color3.fromRGB(255, 255, 255)
+AdoptMe.TextScaled = true
+AdoptMe.TextSize = 14.000
+AdoptMe.TextWrapped = true
+
+UICorner_8.Parent = AdoptMe
+
+PrevPage.Name = "PrevPage"
+PrevPage.Parent = Background
+PrevPage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PrevPage.Position = UDim2.new(0.181498811, 0, 0.902505815, 0)
+PrevPage.Size = UDim2.new(0.31124118, 0, 0.0942081064, 0)
+PrevPage.Font = Enum.Font.SourceSans
+PrevPage.Text = "<"
+PrevPage.TextColor3 = Color3.fromRGB(0, 0, 0)
+PrevPage.TextScaled = true
+PrevPage.TextSize = 14.000
+PrevPage.TextWrapped = true
+
+NextPage.Name = "NextPage"
+NextPage.Parent = Background
+NextPage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NextPage.Position = UDim2.new(0.491803229, 0, 0.902505815, 0)
+NextPage.Size = UDim2.new(0.31124118, 0, 0.0942081064, 0)
+NextPage.Font = Enum.Font.SourceSans
+NextPage.Text = ">"
+NextPage.TextColor3 = Color3.fromRGB(0, 0, 0)
+NextPage.TextScaled = true
+NextPage.TextSize = 14.000
+NextPage.TextWrapped = true
+
+SearchBar.Name = "SearchBar"
+SearchBar.Parent = Background
+SearchBar.BackgroundColor3 = Color3.fromRGB(71, 71, 71)
+SearchBar.Position = UDim2.new(1.0626533, 0, -0.127474234, 0)
+SearchBar.Size = UDim2.new(0.734833181, 0, 0.16231221, 0)
+SearchBar.Font = Enum.Font.SourceSans
+SearchBar.PlaceholderText = "Search"
+SearchBar.Text = ""
+SearchBar.TextColor3 = Color3.fromRGB(255, 255, 255)
+SearchBar.TextScaled = true
+SearchBar.TextSize = 14.000
+SearchBar.TextWrapped = true
+
+TopBarUI.Name = "TopBarUI"
+TopBarUI.Parent = TopFrame
+TopBarUI.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TopBarUI.BackgroundTransparency = 1.000
+TopBarUI.BorderSizePixel = 0
+TopBarUI.Position = UDim2.new(-0.00584777491, 0, 0, 0)
+TopBarUI.Size = UDim2.new(1.00584805, 0, 0.967765689, 0)
+
+Title.Name = "Title"
+Title.Parent = TopBarUI
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.Position = UDim2.new(0.0546344221, 0, 0.072621651, 0)
+Title.Size = UDim2.new(0.579580963, 0, 0.818243325, 0)
+Title.Font = Enum.Font.SourceSans
+Title.Text = "Night Hub"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+
+Toggle.Name = "Toggle"
+Toggle.Parent = TopBarUI
+Toggle.BackgroundColor3 = Color3.fromRGB(255, 170, 0)
+Toggle.BorderSizePixel = 0
+Toggle.Position = UDim2.new(0.847953022, 0, 0.217864931, 0)
+Toggle.Size = UDim2.new(0.0889122859, 0, 0.564067543, 0)
+Toggle.Font = Enum.Font.SourceSans
+Toggle.Text = ""
+Toggle.TextColor3 = Color3.fromRGB(0, 0, 0)
+Toggle.TextSize = 14.000
+
+-- Scripts:
+
+local function VEKXZXS_fake_script() -- TopFrame.Dragify 
+	local script = Instance.new('LocalScript', TopFrame)
+
+	local UserInputService = game:GetService("UserInputService")
+
+	local gui = script.Parent
+
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(VEKXZXS_fake_script)()
+
+
+
+local currentpage = 1
+local maxpage = 1
+
+local page1 = {TowerofHell, DaHood, PrisionLife, BloxFruits, Arsenal, KAT, AdoptMe}
+local page2 = {}
+local page3 = {}
+local page4 = {}
+
+
+local UIS = game:GetService("UserInputService")
+local TeleportSerivce = game:GetService("TeleportService")
+local plr = game.Players.LocalPlayer
+local placeId = game.PlaceId
+
+Toggle.MouseButton1Click:Connect(function()
+	if Background.Visible == true then
+		Background.Visible = false
+		Toggle.BackgroundColor3 = Color3.fromRGB(85, 255, 0)
+	else
+		Background.Visible = true
+		Toggle.BackgroundColor3 = Color3.fromRGB(255, 170, 0)
+	end
+end)
+
+NextPage.MouseButton1Click:Connect(function()
+	if currentpage < maxpage then
+		currentpage += 1
+		if currentpage == 2 then
+			for i, v in pairs(page1) do
+				v.Visible = false
+			end
+			for i, v in pairs(page2) do
+				v.Visible = true
+			end
+		end
+		if currentpage == 3 then
+			for i, v in pairs(page2) do
+				v.Visible = false
+			end
+			for i, v in pairs(page3) do
+				v.Visible = true
+			end
+		end
+		if currentpage == 4 then
+			for i, v in pairs(page3) do
+				v.Visible = false
+			end
+			for i, v in pairs(page4) do
+				v.Visible = true
+			end
+		end
+	end
+end)
+
+PrevPage.MouseButton1Click:Connect(function()
+	if currentpage <= maxpage and currentpage ~= 1 then
+		currentpage -= 1
+		if currentpage == 1 then
+			for i, v in pairs(page1) do
+				v.Visible = true
+			end
+			for i, v in pairs(page2) do
+				v.Visible = false
+			end
+		elseif currentpage == 2 then
+			for i, v in pairs(page2) do
+				v.Visible = true
+			end
+			for i, v in pairs(page3) do
+				v.Visible = false
+			end
+		elseif currentpage == 3 then
+			for i, v in pairs(page3) do
+				v.Visible = true
+			end
+			for i, v in pairs(page4) do
+				v.Visible = false
+			end
+		end
+	end
+end)
+
+SearchBar.Changed:Connect(function()
+	local search = string.lower(SearchBar.Text)
+	for i, v in pairs(ScriptFrame:GetChildren()) do
+		if v:IsA("TextButton") then
+			if search ~= "" then
+				local item = string.lower(v.Text)
+				if string.find(item, search) then
+					v.Visible = true
+				else
+					v.Visible = false
+				end
+			else
+				v.Visible = true
+			end
+		end
+	end
+end)
+
+UIS.InputBegan:Connect(function(input)
+	if input.KeyCode == Enum.KeyCode.RightControl then
+		if TopFrame.Visible == true then
+			TopFrame.Visible = false
+		else
+			TopFrame.Visible = true
+		end
+	end
+	if input.KeyCode == Enum.KeyCode.Delete then
+		NightHub:Destroy()
+	end
+	if input.KeyCode == Enum.KeyCode.RightAlt then
+		TopFrame.Position = UDim2.new(0.312, 0,0.307, 0)
+	end
+end)
+
+plr.Chatted:Connect(function(msg)
+	if msg == "!re" or msg == "!rejoin" then
+		TeleportSerivce:Teleport(placeId, plr)
+	end
+end)
+
+PrisionLife.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/ioshpere/Prision-Life/main/Prision%20Life"))();
+end)
+
+Arsenal.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/ioshpere/Arsenal/main/Arsenal"))();
+end)
+
+TowerofHell.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/ioshpere/Tower-Of-Hell/main/Tower%20Of%20Hell"))()
+end)
+
+BloxFruits.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/ioshpere/Blox-Fuits/main/Blox%20Fruits"))()
+end)
+
+DaHood.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/ioshpere/Da-Hood/main/Da%20Hood"))()
+end)
+
+KAT.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/ioshpere/KAT/main/KAT"))()
+end)
+
+AdoptMe.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/ioshpere/Adopt-Me/main/Adopt%20Me"))()
+end)
