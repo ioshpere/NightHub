@@ -30,7 +30,7 @@ local Toggle = Instance.new("TextButton")
 --Properties:
 
 NightHub.Name = "NightHub"
-NightHub.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+NightHub.Parent = game.CoreGui
 NightHub.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 TopBar.Name = "TopBar"
