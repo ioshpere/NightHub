@@ -1,122 +1,122 @@
 local NightHub = Instance.new("ScreenGui")
-local TopFrame = Instance.new("Frame")
+local TopBar = Instance.new("Frame")
 local Background = Instance.new("Frame")
-local ScriptFrame = Instance.new("Frame")
-local UIListLayout = Instance.new("UIListLayout")
+local GameFrame = Instance.new("ScrollingFrame")
+local AdoptMe = Instance.new("TextButton")
 local UICorner = Instance.new("UICorner")
-local BloxFruits = Instance.new("TextButton")
 local UICorner_2 = Instance.new("UICorner")
-local DaHood = Instance.new("TextButton")
+local UIListLayout = Instance.new("UIListLayout")
+local KAT = Instance.new("TextButton")
 local UICorner_3 = Instance.new("UICorner")
-local TowerofHell = Instance.new("TextButton")
+local BloxFruits = Instance.new("TextButton")
 local UICorner_4 = Instance.new("UICorner")
-local PrisionLife = Instance.new("TextButton")
+local TowerofHell = Instance.new("TextButton")
 local UICorner_5 = Instance.new("UICorner")
 local Arsenal = Instance.new("TextButton")
 local UICorner_6 = Instance.new("UICorner")
-local KAT = Instance.new("TextButton")
+local PrisionLife = Instance.new("TextButton")
 local UICorner_7 = Instance.new("UICorner")
-local AdoptMe = Instance.new("TextButton")
+local CounterBlox = Instance.new("TextButton")
 local UICorner_8 = Instance.new("UICorner")
-local PrevPage = Instance.new("TextButton")
-local NextPage = Instance.new("TextButton")
+local PhantomForces = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local DaHood = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
 local SearchBar = Instance.new("TextBox")
-local TopBarUI = Instance.new("Frame")
+local UICorner_11 = Instance.new("UICorner")
 local Title = Instance.new("TextLabel")
 local Toggle = Instance.new("TextButton")
 
 --Properties:
 
 NightHub.Name = "NightHub"
-NightHub.Parent = game.CoreGui
+NightHub.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 NightHub.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-TopFrame.Name = "TopFrame"
-TopFrame.Parent = NightHub
-TopFrame.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
-TopFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TopFrame.BorderSizePixel = 0
-TopFrame.Position = UDim2.new(0.312280655, 0, 0.307189494, 0)
-TopFrame.Size = UDim2.new(0.190632358, 0, 0.0599999987, 0)
+TopBar.Name = "TopBar"
+TopBar.Parent = NightHub
+TopBar.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+TopBar.Position = UDim2.new(0.0810185075, 0, 0.22857143, 0)
+TopBar.Size = UDim2.new(0.150000006, 0, 0.0599999987, 0)
 
 Background.Name = "Background"
-Background.Parent = TopFrame
-Background.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-Background.BorderSizePixel = 0
-Background.Position = UDim2.new(0, 0, 0.980392218, 0)
-Background.Size = UDim2.new(1.00000012, 0, 7.97575331, 0)
+Background.Parent = TopBar
+Background.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+Background.Position = UDim2.new(-0.00385802449, 0, 0.964502096, 0)
+Background.Size = UDim2.new(1.00385797, 0, 7.89549446, 0)
 
-ScriptFrame.Name = "ScriptFrame"
-ScriptFrame.Parent = Background
-ScriptFrame.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
-ScriptFrame.BorderSizePixel = 0
-ScriptFrame.Position = UDim2.new(0.0526317395, 0, 0.0348379649, 0)
-ScriptFrame.Size = UDim2.new(0.890081406, 0, 0.867667794, 0)
+GameFrame.Name = "GameFrame"
+GameFrame.Parent = Background
+GameFrame.Active = true
+GameFrame.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+GameFrame.Position = UDim2.new(0.0922367349, 0, 0.174465254, 0)
+GameFrame.Size = UDim2.new(0.81103003, 0, 0.768278301, 0)
+GameFrame.CanvasSize = UDim2.new(0, 0, 15, 0)
 
-UIListLayout.Parent = ScriptFrame
+AdoptMe.Name = "AdoptMe"
+AdoptMe.Parent = GameFrame
+AdoptMe.BackgroundColor3 = Color3.fromRGB(94, 94, 94)
+AdoptMe.Size = UDim2.new(0.899999976, 0, 0.00700000022, 0)
+AdoptMe.Font = Enum.Font.Gotham
+AdoptMe.Text = ""
+AdoptMe.TextColor3 = Color3.fromRGB(255, 255, 255)
+AdoptMe.TextScaled = true
+AdoptMe.TextSize = 14.000
+AdoptMe.TextWrapped = true
+
+UICorner.Parent = AdoptMe
+
+UICorner_2.Parent = GameFrame
+
+UIListLayout.Parent = GameFrame
 UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
-UIListLayout.Padding = UDim.new(0, 7)
+UIListLayout.Padding = UDim.new(0, 5)
 
-UICorner.Parent = ScriptFrame
+KAT.Name = "KAT"
+KAT.Parent = GameFrame
+KAT.BackgroundColor3 = Color3.fromRGB(94, 94, 94)
+KAT.Size = UDim2.new(0.899999976, 0, 0.00700000022, 0)
+KAT.Font = Enum.Font.Gotham
+KAT.Text = ""
+KAT.TextColor3 = Color3.fromRGB(255, 255, 255)
+KAT.TextScaled = true
+KAT.TextSize = 14.000
+KAT.TextWrapped = true
+
+UICorner_3.Parent = KAT
 
 BloxFruits.Name = "BloxFruits"
-BloxFruits.Parent = ScriptFrame
+BloxFruits.Parent = GameFrame
 BloxFruits.BackgroundColor3 = Color3.fromRGB(94, 94, 94)
-BloxFruits.Size = UDim2.new(0.993429661, 0, 0.104425773, 0)
+BloxFruits.Size = UDim2.new(0.899999976, 0, 0.00700000022, 0)
 BloxFruits.Font = Enum.Font.Gotham
-BloxFruits.Text = "Blox Fruits"
+BloxFruits.Text = ""
 BloxFruits.TextColor3 = Color3.fromRGB(255, 255, 255)
 BloxFruits.TextScaled = true
 BloxFruits.TextSize = 14.000
 BloxFruits.TextWrapped = true
 
-UICorner_2.Parent = BloxFruits
-
-DaHood.Name = "DaHood"
-DaHood.Parent = ScriptFrame
-DaHood.BackgroundColor3 = Color3.fromRGB(94, 94, 94)
-DaHood.Size = UDim2.new(0.993429661, 0, 0.104425773, 0)
-DaHood.Font = Enum.Font.Gotham
-DaHood.Text = "Da Hood"
-DaHood.TextColor3 = Color3.fromRGB(255, 255, 255)
-DaHood.TextScaled = true
-DaHood.TextSize = 14.000
-DaHood.TextWrapped = true
-
-UICorner_3.Parent = DaHood
+UICorner_4.Parent = BloxFruits
 
 TowerofHell.Name = "TowerofHell"
-TowerofHell.Parent = ScriptFrame
+TowerofHell.Parent = GameFrame
 TowerofHell.BackgroundColor3 = Color3.fromRGB(94, 94, 94)
-TowerofHell.Size = UDim2.new(0.993429661, 0, 0.104425773, 0)
+TowerofHell.Size = UDim2.new(0.899999976, 0, 0.00700000022, 0)
 TowerofHell.Font = Enum.Font.Gotham
-TowerofHell.Text = "Tower Of Hell"
+TowerofHell.Text = ""
 TowerofHell.TextColor3 = Color3.fromRGB(255, 255, 255)
 TowerofHell.TextScaled = true
 TowerofHell.TextSize = 14.000
 TowerofHell.TextWrapped = true
 
-UICorner_4.Parent = TowerofHell
-
-PrisionLife.Name = "PrisionLife"
-PrisionLife.Parent = ScriptFrame
-PrisionLife.BackgroundColor3 = Color3.fromRGB(94, 94, 94)
-PrisionLife.Size = UDim2.new(0.993429661, 0, 0.104425773, 0)
-PrisionLife.Font = Enum.Font.Gotham
-PrisionLife.Text = "Prision Life"
-PrisionLife.TextColor3 = Color3.fromRGB(255, 255, 255)
-PrisionLife.TextScaled = true
-PrisionLife.TextSize = 14.000
-PrisionLife.TextWrapped = true
-
-UICorner_5.Parent = PrisionLife
+UICorner_5.Parent = TowerofHell
 
 Arsenal.Name = "Arsenal"
-Arsenal.Parent = ScriptFrame
+Arsenal.Parent = GameFrame
 Arsenal.BackgroundColor3 = Color3.fromRGB(94, 94, 94)
-Arsenal.Size = UDim2.new(0.993429661, 0, 0.104425773, 0)
+Arsenal.Size = UDim2.new(0.899999976, 0, 0.00700000022, 0)
 Arsenal.Font = Enum.Font.Gotham
-Arsenal.Text = "Arsenal"
+Arsenal.Text = ""
 Arsenal.TextColor3 = Color3.fromRGB(255, 255, 255)
 Arsenal.TextScaled = true
 Arsenal.TextSize = 14.000
@@ -124,61 +124,63 @@ Arsenal.TextWrapped = true
 
 UICorner_6.Parent = Arsenal
 
-KAT.Name = "KAT"
-KAT.Parent = ScriptFrame
-KAT.BackgroundColor3 = Color3.fromRGB(94, 94, 94)
-KAT.Size = UDim2.new(0.993429661, 0, 0.104425773, 0)
-KAT.Font = Enum.Font.Gotham
-KAT.Text = "KAT"
-KAT.TextColor3 = Color3.fromRGB(255, 255, 255)
-KAT.TextScaled = true
-KAT.TextSize = 14.000
-KAT.TextWrapped = true
+PrisionLife.Name = "PrisionLife"
+PrisionLife.Parent = GameFrame
+PrisionLife.BackgroundColor3 = Color3.fromRGB(94, 94, 94)
+PrisionLife.Size = UDim2.new(0.899999976, 0, 0.00700000022, 0)
+PrisionLife.Font = Enum.Font.Gotham
+PrisionLife.Text = ""
+PrisionLife.TextColor3 = Color3.fromRGB(255, 255, 255)
+PrisionLife.TextScaled = true
+PrisionLife.TextSize = 14.000
+PrisionLife.TextWrapped = true
 
-UICorner_7.Parent = KAT
+UICorner_7.Parent = PrisionLife
 
-AdoptMe.Name = "AdoptMe"
-AdoptMe.Parent = ScriptFrame
-AdoptMe.BackgroundColor3 = Color3.fromRGB(94, 94, 94)
-AdoptMe.Size = UDim2.new(0.993429661, 0, 0.104425773, 0)
-AdoptMe.Font = Enum.Font.Gotham
-AdoptMe.Text = "Adopt Me"
-AdoptMe.TextColor3 = Color3.fromRGB(255, 255, 255)
-AdoptMe.TextScaled = true
-AdoptMe.TextSize = 14.000
-AdoptMe.TextWrapped = true
+CounterBlox.Name = "CounterBlox"
+CounterBlox.Parent = GameFrame
+CounterBlox.BackgroundColor3 = Color3.fromRGB(94, 94, 94)
+CounterBlox.Size = UDim2.new(0.899999976, 0, 0.00700000022, 0)
+CounterBlox.Font = Enum.Font.Gotham
+CounterBlox.Text = ""
+CounterBlox.TextColor3 = Color3.fromRGB(255, 255, 255)
+CounterBlox.TextScaled = true
+CounterBlox.TextSize = 14.000
+CounterBlox.TextWrapped = true
 
-UICorner_8.Parent = AdoptMe
+UICorner_8.Parent = CounterBlox
 
-PrevPage.Name = "PrevPage"
-PrevPage.Parent = Background
-PrevPage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-PrevPage.Position = UDim2.new(0.181498811, 0, 0.902505815, 0)
-PrevPage.Size = UDim2.new(0.31124118, 0, 0.0942081064, 0)
-PrevPage.Font = Enum.Font.SourceSans
-PrevPage.Text = "<"
-PrevPage.TextColor3 = Color3.fromRGB(0, 0, 0)
-PrevPage.TextScaled = true
-PrevPage.TextSize = 14.000
-PrevPage.TextWrapped = true
+PhantomForces.Name = "PhantomForces"
+PhantomForces.Parent = GameFrame
+PhantomForces.BackgroundColor3 = Color3.fromRGB(94, 94, 94)
+PhantomForces.Size = UDim2.new(0.899999976, 0, 0.00700000022, 0)
+PhantomForces.Font = Enum.Font.Gotham
+PhantomForces.Text = ""
+PhantomForces.TextColor3 = Color3.fromRGB(255, 255, 255)
+PhantomForces.TextScaled = true
+PhantomForces.TextSize = 14.000
+PhantomForces.TextWrapped = true
 
-NextPage.Name = "NextPage"
-NextPage.Parent = Background
-NextPage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-NextPage.Position = UDim2.new(0.491803229, 0, 0.902505815, 0)
-NextPage.Size = UDim2.new(0.31124118, 0, 0.0942081064, 0)
-NextPage.Font = Enum.Font.SourceSans
-NextPage.Text = ">"
-NextPage.TextColor3 = Color3.fromRGB(0, 0, 0)
-NextPage.TextScaled = true
-NextPage.TextSize = 14.000
-NextPage.TextWrapped = true
+UICorner_9.Parent = PhantomForces
+
+DaHood.Name = "DaHood"
+DaHood.Parent = GameFrame
+DaHood.BackgroundColor3 = Color3.fromRGB(94, 94, 94)
+DaHood.Size = UDim2.new(0.899999976, 0, 0.00700000022, 0)
+DaHood.Font = Enum.Font.Gotham
+DaHood.Text = ""
+DaHood.TextColor3 = Color3.fromRGB(255, 255, 255)
+DaHood.TextScaled = true
+DaHood.TextSize = 14.000
+DaHood.TextWrapped = true
+
+UICorner_10.Parent = DaHood
 
 SearchBar.Name = "SearchBar"
 SearchBar.Parent = Background
 SearchBar.BackgroundColor3 = Color3.fromRGB(71, 71, 71)
-SearchBar.Position = UDim2.new(1.0626533, 0, -0.127474234, 0)
-SearchBar.Size = UDim2.new(0.734833181, 0, 0.16231221, 0)
+SearchBar.Position = UDim2.new(0.0634217858, 0, 0.0205634739, 0)
+SearchBar.Size = UDim2.new(0.875087023, 0, 0.129414946, 0)
 SearchBar.Font = Enum.Font.SourceSans
 SearchBar.PlaceholderText = "Search"
 SearchBar.Text = ""
@@ -187,20 +189,14 @@ SearchBar.TextScaled = true
 SearchBar.TextSize = 14.000
 SearchBar.TextWrapped = true
 
-TopBarUI.Name = "TopBarUI"
-TopBarUI.Parent = TopFrame
-TopBarUI.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TopBarUI.BackgroundTransparency = 1.000
-TopBarUI.BorderSizePixel = 0
-TopBarUI.Position = UDim2.new(-0.00584777491, 0, 0, 0)
-TopBarUI.Size = UDim2.new(1.00584805, 0, 0.967765689, 0)
+UICorner_11.Parent = SearchBar
 
 Title.Name = "Title"
-Title.Parent = TopBarUI
+Title.Parent = TopBar
 Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Title.BackgroundTransparency = 1.000
-Title.Position = UDim2.new(0.0546344221, 0, 0.072621651, 0)
-Title.Size = UDim2.new(0.579580963, 0, 0.818243325, 0)
+Title.Position = UDim2.new(-0.00709404144, 0, -0.0139588192, 0)
+Title.Size = UDim2.new(0.65674144, 0, 0.89188081, 0)
 Title.Font = Enum.Font.SourceSans
 Title.Text = "Night Hub"
 Title.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -209,11 +205,11 @@ Title.TextSize = 14.000
 Title.TextWrapped = true
 
 Toggle.Name = "Toggle"
-Toggle.Parent = TopBarUI
+Toggle.Parent = TopBar
 Toggle.BackgroundColor3 = Color3.fromRGB(255, 170, 0)
 Toggle.BorderSizePixel = 0
-Toggle.Position = UDim2.new(0.847953022, 0, 0.217864931, 0)
-Toggle.Size = UDim2.new(0.0889122859, 0, 0.564067543, 0)
+Toggle.Position = UDim2.new(0.847953022, 0, 0.261155069, 0)
+Toggle.Size = UDim2.new(0.0889122933, 0, 0.434197396, 0)
 Toggle.Font = Enum.Font.SourceSans
 Toggle.Text = ""
 Toggle.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -221,83 +217,25 @@ Toggle.TextSize = 14.000
 
 -- Scripts:
 
-local function VEKXZXS_fake_script() -- TopFrame.Dragify 
-	local script = Instance.new('LocalScript', TopFrame)
+local function GLSC_fake_script() -- GameFrame.TextScript 
+	local script = Instance.new('LocalScript', GameFrame)
 
-	local UserInputService = game:GetService("UserInputService")
-
-	local gui = script.Parent
-
-	local dragging
-	local dragInput
-	local dragStart
-	local startPos
-
-	local function update(input)
-		local delta = input.Position - dragStart
-		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
-	end
-
-	gui.InputBegan:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
-			dragging = true
-			dragStart = input.Position
-			startPos = gui.Position
-
-			input.Changed:Connect(function()
-				if input.UserInputState == Enum.UserInputState.End then
-					dragging = false
-				end
-			end)
+	local gameframe = script.Parent
+	
+	for i, v in pairs(gameframe:GetChildren()) do
+		if v:IsA("TextButton") then
+			v.Text = v.Name
 		end
-	end)
-
-	gui.InputChanged:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-			dragInput = input
-		end
-	end)
-
-	UserInputService.InputChanged:Connect(function(input)
-		if input == dragInput and dragging then
-			update(input)
-		end
-	end)
-end
-coroutine.wrap(VEKXZXS_fake_script)()
-
-
----DISCORD INVITE
-
-local bindable = Instance.new("BindableFunction")
-
-local function DiscordInvite(response)
-	if response == "Yes" then
-		setclipboard(tostring("https://discord.gg/kau6Xtrk"))
 	end
 end
+coroutine.wrap(GLSC_fake_script)()
+local function JCVVPXN_fake_script() -- TopBar.LocalScript 
+	local script = Instance.new('LocalScript', TopBar)
 
-bindable.OnInvoke = DiscordInvite
-
-game.StarterGui:SetCore("SendNotification", {
-	Title = "Discord Invite",
-	Text = "Copy Discord to Clipboard",
-	Icon = "",
-	Duration = 7,
-	Callback = bindable,
-	Button1 = "Yes",
-	Button2 = "No"
-})
-
----DISCORD INVITE
-
-local currentpage = 1
-local maxpage = 1
-
-local page1 = {TowerofHell, DaHood, PrisionLife, BloxFruits, Arsenal, KAT, AdoptMe}
-local page2 = {}
-local page3 = {}
-local page4 = {}
+	script.Parent.Active = true
+	script.Parent.Draggable = true
+end
+coroutine.wrap(JCVVPXN_fake_script)()
 
 
 local UIS = game:GetService("UserInputService")
@@ -315,67 +253,9 @@ Toggle.MouseButton1Click:Connect(function()
 	end
 end)
 
-NextPage.MouseButton1Click:Connect(function()
-	if currentpage < maxpage then
-		currentpage += 1
-		if currentpage == 2 then
-			for i, v in pairs(page1) do
-				v.Visible = false
-			end
-			for i, v in pairs(page2) do
-				v.Visible = true
-			end
-		end
-		if currentpage == 3 then
-			for i, v in pairs(page2) do
-				v.Visible = false
-			end
-			for i, v in pairs(page3) do
-				v.Visible = true
-			end
-		end
-		if currentpage == 4 then
-			for i, v in pairs(page3) do
-				v.Visible = false
-			end
-			for i, v in pairs(page4) do
-				v.Visible = true
-			end
-		end
-	end
-end)
-
-PrevPage.MouseButton1Click:Connect(function()
-	if currentpage <= maxpage and currentpage ~= 1 then
-		currentpage -= 1
-		if currentpage == 1 then
-			for i, v in pairs(page1) do
-				v.Visible = true
-			end
-			for i, v in pairs(page2) do
-				v.Visible = false
-			end
-		elseif currentpage == 2 then
-			for i, v in pairs(page2) do
-				v.Visible = true
-			end
-			for i, v in pairs(page3) do
-				v.Visible = false
-			end
-		elseif currentpage == 3 then
-			for i, v in pairs(page3) do
-				v.Visible = true
-			end
-			for i, v in pairs(page4) do
-				v.Visible = false
-			end
-		end
-	end
-end)
-
 SearchBar.Changed:Connect(function()
 	local search = string.lower(SearchBar.Text)
-	for i, v in pairs(ScriptFrame:GetChildren()) do
+	for i, v in pairs(GameFrame:GetChildren()) do
 		if v:IsA("TextButton") then
 			if search ~= "" then
 				local item = string.lower(v.Text)
@@ -393,17 +273,17 @@ end)
 
 UIS.InputBegan:Connect(function(input)
 	if input.KeyCode == Enum.KeyCode.RightControl then
-		if TopFrame.Visible == true then
-			TopFrame.Visible = false
+		if TopBar.Visible == true then
+			TopBar.Visible = false
 		else
-			TopFrame.Visible = true
+			TopBar.Visible = true
 		end
 	end
 	if input.KeyCode == Enum.KeyCode.Delete then
 		NightHub:Destroy()
 	end
 	if input.KeyCode == Enum.KeyCode.RightAlt then
-		TopFrame.Position = UDim2.new(0.312, 0,0.307, 0)
+		TopBar.Position = UDim2.new(0.081, 0,0.229, 0)
 	end
 end)
 
@@ -414,29 +294,37 @@ plr.Chatted:Connect(function(msg)
 end)
 
 PrisionLife.MouseButton1Click:Connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/ioshpere/Prision-Life/main/Prision%20Life"))();
+	loadstring(game:HttpGet("https://pastebin.com/raw/4fXUW79z"))();
 end)
 
 Arsenal.MouseButton1Click:Connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/ioshpere/Arsenal/main/Arsenal"))();
+	loadstring(game:HttpGet("https://pastebin.com/raw/RgPzDtcH"))();
 end)
 
 TowerofHell.MouseButton1Click:Connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/ioshpere/Tower-Of-Hell/main/Tower%20Of%20Hell"))()
+	loadstring(game:HttpGet('https://pastebin.com/raw/BbVHjH56'))()
 end)
 
 BloxFruits.MouseButton1Click:Connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/ioshpere/Blox-Fuits/main/Blox%20Fruits"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/1f0yt/community/master/hxllow"))()
 end)
 
 DaHood.MouseButton1Click:Connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/ioshpere/Da-Hood/main/Da%20Hood"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/NighterEpic/Faded/main/YesEpic", true))()
 end)
 
 KAT.MouseButton1Click:Connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/ioshpere/KAT/main/KAT"))()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
 end)
 
 AdoptMe.MouseButton1Click:Connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/ioshpere/Adopt-Me/main/Adopt%20Me"))()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/rblxscriptsnet/unfair/main/rblxhub.lua'),true))()
+end)
+
+CounterBlox.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/Pawel12d/hexagon/main/scripts/CounterBlox.lua', true))()
+end)
+
+PhantomForces.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://ducksite.xyz/ceri/main.lua"))()
 end)
