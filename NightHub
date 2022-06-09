@@ -322,9 +322,9 @@ AdoptMe.MouseButton1Click:Connect(function()
 end)
 
 CounterBlox.MouseButton1Click:Connect(function()
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/Pawel12d/hexagon/main/scripts/CounterBlox.lua', true))()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/ioshpere/Counter-Blox/main/Counter%20Blox',true))()
 end)
 
 PhantomForces.MouseButton1Click:Connect(function()
-	loadstring(game:HttpGet("https://ducksite.xyz/ceri/main.lua"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/ioshpere/Phantom-Forces/main/Phantom%20Forces"))()
 end)
