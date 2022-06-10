@@ -21,10 +21,12 @@ local CounterBlox = Instance.new("TextButton")
 local UICorner_9 = Instance.new("UICorner")
 local PhantomForces = Instance.new("TextButton")
 local UICorner_10 = Instance.new("UICorner")
-local SearchBar = Instance.new("TextBox")
+local ClickerSimulator = Instance.new("TextButton")
 local UICorner_11 = Instance.new("UICorner")
-local Close = Instance.new("TextButton")
+local SearchBar = Instance.new("TextBox")
 local UICorner_12 = Instance.new("UICorner")
+local Close = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
 
 --Properties:
 
@@ -179,6 +181,20 @@ PhantomForces.TextWrapped = true
 UICorner_10.CornerRadius = UDim.new(0, 10)
 UICorner_10.Parent = PhantomForces
 
+ClickerSimulator.Name = "ClickerSimulator"
+ClickerSimulator.Parent = GameHub
+ClickerSimulator.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+ClickerSimulator.Size = UDim2.new(0.959999979, 0, 0.00749999983, 0)
+ClickerSimulator.Font = Enum.Font.SourceSans
+ClickerSimulator.Text = "Clicker Simulator"
+ClickerSimulator.TextColor3 = Color3.fromRGB(255, 255, 255)
+ClickerSimulator.TextScaled = true
+ClickerSimulator.TextSize = 14.000
+ClickerSimulator.TextWrapped = true
+
+UICorner_11.CornerRadius = UDim.new(0, 10)
+UICorner_11.Parent = ClickerSimulator
+
 SearchBar.Name = "SearchBar"
 SearchBar.Parent = Background
 SearchBar.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
@@ -192,8 +208,8 @@ SearchBar.TextScaled = true
 SearchBar.TextSize = 14.000
 SearchBar.TextWrapped = true
 
-UICorner_11.CornerRadius = UDim.new(0, 20)
-UICorner_11.Parent = SearchBar
+UICorner_12.CornerRadius = UDim.new(0, 20)
+UICorner_12.Parent = SearchBar
 
 Close.Name = "Close"
 Close.Parent = Background
@@ -205,34 +221,34 @@ Close.Text = ""
 Close.TextColor3 = Color3.fromRGB(0, 0, 0)
 Close.TextSize = 14.000
 
-UICorner_12.CornerRadius = UDim.new(1, 0)
-UICorner_12.Parent = Close
+UICorner_13.CornerRadius = UDim.new(1, 0)
+UICorner_13.Parent = Close
 
 -- Scripts:
 
-local function EGBPHP_fake_script() -- Background.Dragify 
+local function NXID_fake_script() -- Background.Dragify 
 	local script = Instance.new('LocalScript', Background)
 
 	local UserInputService = game:GetService("UserInputService")
-	
+
 	local gui = script.Parent
-	
+
 	local dragging
 	local dragInput
 	local dragStart
 	local startPos
-	
+
 	local function update(input)
 		local delta = input.Position - dragStart
 		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
 	end
-	
+
 	gui.InputBegan:Connect(function(input)
 		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
 			dragging = true
 			dragStart = input.Position
 			startPos = gui.Position
-	
+
 			input.Changed:Connect(function()
 				if input.UserInputState == Enum.UserInputState.End then
 					dragging = false
@@ -240,20 +256,20 @@ local function EGBPHP_fake_script() -- Background.Dragify
 			end)
 		end
 	end)
-	
+
 	gui.InputChanged:Connect(function(input)
 		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
 			dragInput = input
 		end
 	end)
-	
+
 	UserInputService.InputChanged:Connect(function(input)
 		if input == dragInput and dragging then
 			update(input)
 		end
 	end)
 end
-coroutine.wrap(EGBPHP_fake_script)()
+coroutine.wrap(NXID_fake_script)()
 
 
 
@@ -346,4 +362,8 @@ end)
 
 PhantomForces.MouseButton1Click:Connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/ioshpere/Phantom-Forces/main/Phantom%20Forces"))()
+end)
+
+ClickerSimulator.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/ioshpere/Clicker-Simulator/main/Clicker%20Simulator', true))()
 end)
